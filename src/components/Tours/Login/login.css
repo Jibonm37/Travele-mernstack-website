@@ -1,0 +1,11 @@
+.login-page{
+    background:url('../../../images/bg2.jpg');
+    height: 100vh;
+}
+.g-icon{
+  color: greenyellow;
+  text-decoration: none;
+}
+.g-text{
+  cursor: pointer;
+}
