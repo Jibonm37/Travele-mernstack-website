@@ -8,6 +8,7 @@ import Login from './components/Tours/Login/Login';
 import Tours from './components/Tours/Tours';
 import NotFound from './components/Notfound/NotFound';
 import AuthProvider from './components/contexts/Authprovider';
+import Booking from './components/Booking/Booking';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
     </Route>
     <Route path='/login'>
         <Login></Login>
+    </Route>
+    <Route path='/booking//:tripId'>
+    <Booking></Booking>
     </Route>
     <Route path='*'>
         <NotFound></NotFound>
