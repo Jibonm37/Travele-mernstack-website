@@ -1,0 +1,11 @@
+form input,textarea{
+width: 50%;
+margin-bottom: 5px;
+}
+form{
+    padding: 50px 20px;
+}
+.form-div{
+    padding: 110px 380px ;
+    background-color:cornsilk;
+}

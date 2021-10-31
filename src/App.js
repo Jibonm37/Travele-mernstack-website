@@ -9,6 +9,8 @@ import Tours from './components/Tours/Tours';
 import NotFound from './components/Notfound/NotFound';
 import AuthProvider from './components/contexts/Authprovider';
 import Booking from './components/Booking/Booking';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import AddTrip from './components/AddTrip/AddTrip';
 
 function App() {
   return (
@@ -33,9 +35,12 @@ function App() {
     <Route path='/login'>
         <Login></Login>
     </Route>
-    <Route path='/booking//:tripId'>
+    <PrivateRoute path='/booking/:tripId'>
     <Booking></Booking>
-    </Route>
+    </PrivateRoute>
+    <PrivateRoute path='/addTrip'>
+    <AddTrip></AddTrip>
+    </PrivateRoute>
     <Route path='*'>
         <NotFound></NotFound>
     </Route>
