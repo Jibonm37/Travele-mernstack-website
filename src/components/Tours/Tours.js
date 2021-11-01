@@ -10,7 +10,7 @@ const Tours = () => {
         .then(data => setTours(data))
     },[])
     return (
-        <div>
+        <div className='bg-dark'>
             <h2 className='text-info fs-1 py-4'>Our Trips </h2>
             <hr />
             

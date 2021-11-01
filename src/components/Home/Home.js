@@ -12,7 +12,7 @@ const Home = () => {
         .then(data => setTours(data))
     },[])
     return (
-        <div className='home-page'>
+        <div className='home-page bg-dark'>
             <div className='bg-dark '>
           <img className=' banner-img' src={bannar} alt="" />
       </div>
