@@ -10,14 +10,17 @@ const AddTrip = () => {
     .then(res => {
         if(res.data.insertedId){
             alert('Added Successfully')
+            console.log(res.data);
            reset()
         }
     })
-  
+   console.log(data);
+   reset()
   }
     return (
         <div className='form-div'>
             <form className='bg-dark' onSubmit={handleSubmit(onSubmit)}>
+                <h4 className='text-info pb-3 '>Add New Trip</h4>
       <input placeholder='Trip Name' {...register("name")} />
       <br />
       <input  placeholder='Location' {...register("country")} />
@@ -30,7 +33,7 @@ const AddTrip = () => {
       <br />
       <textarea  placeholder='Write something about trip' type="text" {...register("about")} />
       <br />
-      <input  type="submit" />
+      <input className="bg-info text-dark"  type="submit" />
     </form>
         </div>
     );
