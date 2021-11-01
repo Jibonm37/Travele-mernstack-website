@@ -3,7 +3,7 @@ import './mytrips.css'
 
 const Mytrips = () => {
     return (
-        <div className='trips'>
+        <div className='trips bg-dark'>
            
             
         </div>

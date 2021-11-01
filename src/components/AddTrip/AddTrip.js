@@ -18,7 +18,7 @@ const AddTrip = () => {
    reset()
   }
     return (
-        <div className='form-div'>
+        <div className='form-div bg-dark'>
             <form className='bg-dark' onSubmit={handleSubmit(onSubmit)}>
                 <h4 className='text-info pb-3 '>Add New Trip</h4>
       <input placeholder='Trip Name' {...register("name")} />

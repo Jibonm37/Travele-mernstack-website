@@ -14,7 +14,7 @@ const Booking = () => {
         .then(data => setTrip(data))
     },[])
     return (
-        <div className=' mt-4'>
+        <div className=' mt-4 bg-dark'>
             <Row xs={1} md={2} className="g-4 ">
               <Col className='m-auto'>
         <Card className='p-3'>
@@ -28,7 +28,7 @@ const Booking = () => {
                 Time: {trip.time}
             </h6>
             <h6>
-                Time: {trip.cost}
+                Cost: ${trip.cost}
             </h6>
             <p>{trip.about}</p>
           
